@@ -1,5 +1,5 @@
 <%= bootstrap_form_for @post do |p| %>
-  <%= p.text_field :image, placeholder: "Image link here" %>
+  <%= p.file_field :image, placeholder: "Image link here" %>
   <%= p.text_field :desc, placeholder: "Descripton here"  %>
   <%= p.primary "Share" %>
 <% end %>
