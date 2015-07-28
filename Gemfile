@@ -28,6 +28,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap_form'
 
+gem 'font-awesome-less'
+
 gem 'cloudinary'
 
 gem 'foreman'

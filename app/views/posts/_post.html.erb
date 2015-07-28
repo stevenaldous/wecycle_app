@@ -1,11 +1,16 @@
-<%= @posts.each do |p| %>
+<% @posts.each do |p| %>
   <div class="well">
-    <ul>
-      <li><%= p.user.image %></li>
-      <li><%= p.user.display_name %></li>
-      <li><%= p.user.description %></li>
-    </ul>
+    <%= cl_image_tag(p.image, :class => "img-responsive") %>
+    <h3><%= p.desc %></h3>
+    <span>
+     <%= p.user.display_name %>
+      <%= link_to "", root_path(p), class: 'glyphicon glyphicon-commentbox' %>
+      <% if p.owned_by? @current_user %>
+        <%= link_to "", post_path(p), class: 'glyphicon glyphicon-pencil' %>
+        <%= link_to "", p, method: :delete, class: 'glyphicon glyphicon-trash' %>
+      <% end %>
+
+      </span>
   </div>
-
-
 <% end %>
+

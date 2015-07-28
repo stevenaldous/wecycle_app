@@ -1,39 +1,28 @@
 class PostsController < ApplicationController
 
   def index
+    @posts = Post.all
+  end
 
-  end
   def new
-    @posts = Post.new
+    @post = Post.new
   end
+
   def show
   end
+
   def create
-    uploaded_file = params[:user][:image].path
-    cloudnary_file = Cloudinary::Uploader.upload(upload_file)
-
-
-
-    @post = current_user.post.create post_params
-    if @post.persisted?
-      redirect_to root_path
-    else
-     render :new
-    end
+    uploaded_file_path = params[:post][:image].path
+    cloudinary_file = Cloudinary::Uploader.upload(uploaded_file_path)
+    @post = current_user.posts.create(desc: params[:post][:desc],image: cloudinary_file['public_id'])
+    redirect_to posts_path
   end
+
   def edit
   end
 
   def destroy
     @post = Post.find(params[:id]).delete
   end
-
-
-
-private
-  def post_params
-    params.require(:post).permit(:desc,:image)
-  end
-
 
 end
