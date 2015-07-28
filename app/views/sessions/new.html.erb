@@ -1,0 +1,18 @@
+<div class="col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Log In</h2>
+    </div>
+  <div class="panel-body">
+    <%= bootstrap_form_for :user do |u| %>
+      <%= u.text_field :email %>
+      <%= u.password_field :password %>
+    <%= u.primary "Log In" %>
+   <% end %>
+     <div class="panel-footer">
+     <h5>New to WEcycle? <%= link_to "Sign Up Here.", new_user_path %></h5>
+     </div>
+  </div>
+  </div>
+</div>
+
