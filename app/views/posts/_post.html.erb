@@ -4,7 +4,9 @@
     <h3><%= p.desc %></h3>
     <span>
      <%= p.user.display_name %>
-      <%= link_to "", root_path(p), class: 'glyphicon glyphicon-commentbox' %>
+     </span>
+     <span id="icons">
+      <%= link_to "", root_path(p), class: 'glyphicon glyphicon-comment' %>
       <% if p.owned_by? @current_user %>
         <%= link_to "", post_path(p), class: 'glyphicon glyphicon-pencil' %>
         <%= link_to "", p, method: :delete, class: 'glyphicon glyphicon-trash' %>

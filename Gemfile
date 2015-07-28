@@ -28,7 +28,17 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'bootstrap_form'
 
-gem 'font-awesome-less'
+gem 'font-awesome-sass', '~> 4.3.0'
+
+gem 'fullcalendar-rails'
+
+gem 'momentjs-rails'
+
+gem 'json', '~> 1.8.3'
+
+gem 'nokogiri', '~> 1.6.6.2'
+
+gem 'rest-client', '~> 1.8.0'
 
 gem 'cloudinary'
 
