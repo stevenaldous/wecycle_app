@@ -30,8 +30,6 @@ gem 'bootstrap_form'
 
 gem 'font-awesome-sass', '~> 4.3.0'
 
-gem 'fullcalendar-rails'
-
 gem 'momentjs-rails'
 
 gem 'json', '~> 1.8.3'
@@ -42,9 +40,11 @@ gem 'rest-client', '~> 1.8.0'
 
 gem 'cloudinary'
 
-gem 'gon', '~> 5.2.3'
+gem 'gon'
 
 gem 'foreman'
+
+gem 'fullcalendar-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

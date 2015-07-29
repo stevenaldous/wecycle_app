@@ -182,7 +182,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.3.0)
   foreman
   fullcalendar-rails
-  gon (~> 5.2.3)
+  gon
   jbuilder (~> 2.0)
   jquery-rails
   json (~> 1.8.3)
