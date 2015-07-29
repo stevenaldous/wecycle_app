@@ -42,6 +42,8 @@ gem 'rest-client', '~> 1.8.0'
 
 gem 'cloudinary'
 
+gem 'gon', '~> 5.2.3'
+
 gem 'foreman'
 
 # Use Unicorn as the app server
