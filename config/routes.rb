@@ -10,8 +10,11 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy'
 
 
+  get 'calendars' => 'calendars#index'
+  post 'calendars' => 'calendars#find'
+
   resources :posts
   resources :comments
-  resources :calendars
+
 
 end
