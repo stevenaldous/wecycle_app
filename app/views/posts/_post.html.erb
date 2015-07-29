@@ -8,7 +8,7 @@
      <span id="icons">
       <%= link_to "", root_path(p), class: 'glyphicon glyphicon-comment' %>
       <% if p.owned_by? @current_user %>
-        <%= link_to "", post_path(p), class: 'glyphicon glyphicon-pencil' %>
+        <%= link_to "", edit_post_path(p), class: 'glyphicon glyphicon-pencil' %>
         <%= link_to "", p, method: :delete, class: 'glyphicon glyphicon-trash' %>
       <% end %>
 

@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
   belongs_to :user
   has_many :comment
 
+
   def owned_by? user
     user && user.id == self.user.id
   end

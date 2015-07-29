@@ -8,9 +8,11 @@
       <%= u.text_field :email %>
       <%= u.text_field :username %>
       <%= u.password_field :password %>
-      <%= u.password_field :password %>
     <%= u.primary "Sign Up" %>
    <% end %>
+   <div class="panel-footer">
+     <h5>Already a member of WEcycle? <%= link_to "Login Here.", login_path %></h5>
+     </div>
   </div>
   </div>
 </div>
