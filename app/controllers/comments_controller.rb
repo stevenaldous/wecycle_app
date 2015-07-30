@@ -14,19 +14,13 @@ end
 
 
 
-  def create
-  @comment = Comment.new(comment_params)
+def create
+
+  @comment = Comment.create(comment_params)
   redirect_to comments_path
 
 
 end
-
-
-
-
-
-
-
 
 def destroy
   Comment.find(params[:id]).delete

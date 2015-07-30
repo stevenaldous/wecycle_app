@@ -13,8 +13,12 @@ Rails.application.routes.draw do
   get 'calendars' => 'calendars#index'
   post 'calendars' => 'calendars#find'
 
-  resources :posts
-  resources :comments
+
+
+  resources :posts do
+   resources :comments
+  end
+
 
 
 end

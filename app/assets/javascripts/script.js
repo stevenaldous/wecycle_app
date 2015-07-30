@@ -1,11 +1,31 @@
 $(document).ready(function() {
 
-    // page is now ready, initialize the calendar...
+var calendarData = gon.calendarResponse
+//
+// alert(calendarData);
+
+
+
+
+
   $('#calendar').fullCalendar({
-    url: gon.calendarResponse
+    events:
+    [
+      { title: "yahtzee!",
+        start: '2015-07-30',
+        end: '2015-07-30',
+        allDay:true
+      }
 
 
 
-   });
+    ]
 
-});
+
+
+
+
+     }); // end of calendar
+  //   }
+  // })  //end ofAjax
+});  //end of DOM

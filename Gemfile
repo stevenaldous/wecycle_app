@@ -44,6 +44,8 @@ gem 'gon'
 
 gem 'foreman'
 
+gem 'seed_dump'
+
 gem 'rails_12factor', group: :production
 
 gem 'fullcalendar-rails'
