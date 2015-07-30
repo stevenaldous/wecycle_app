@@ -15,7 +15,7 @@ class CalendarsController < ApplicationController
     converted_array = convert.slice(1..-2).split(",")
     location = converted_array[0][1..-2]
     @response = "http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=#{location}&pJustChecking=&pApp=CC&pIE=&start=0"
-    gon.testresponse = @response
+    gon.calendarResponse = @response
     render 'index'
   end
 
