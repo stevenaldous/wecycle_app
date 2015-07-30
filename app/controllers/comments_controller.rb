@@ -15,11 +15,9 @@ end
 
 
 def create
-
-  @comment = Comment.create(comment_params)
+  @post = Post.find params[:post_id]
+  @comment = @current_user.comments.create(comment_params)
   redirect_to comments_path
-
-
 end
 
 def destroy

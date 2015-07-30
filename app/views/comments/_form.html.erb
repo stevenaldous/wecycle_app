@@ -1,4 +1,4 @@
-<%= bootstrap_form_for @comment do |c| %>
+<%= bootstrap_form_for ([@post,@comment]) do |c| %>
   <%= c.text_field :comm, placeholder: "Comment here" %>
   <%= c.primary "Submit" %>
 <% end %>
