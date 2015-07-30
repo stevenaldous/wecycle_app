@@ -1,22 +1,43 @@
-class UsersController < ApplicationController
+class CommentsController < ApplicationController
+
+
 
 def index
-  @comment = Comment.all.order('updated_at ASC')
+  @comments = Comment.all.order('updated_at ASC')
 end
 def show
-  @comment = Comment.find params[:id]
+
 end
-def create
-  Comment.create comment_params
+def new
+  @comment = Comment.new
 end
+
+
+
+  def create
+  @comment = Comment.new(comment_params)
+  redirect_to comments_path
+
+
+end
+
+
+
+
+
+
+
+
 def destroy
   Comment.find(params[:id]).delete
+  redirect_to posts_path
 end
 
 
 private
   def comment_params
-    params.require(:comment).permit(:comm)
+    params.require(:comment).permit(:comm, :user_id, :post_id)
   end
+
 
 end
