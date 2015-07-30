@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 def create
   @user = User.create user_params
   if @user.persisted?
-    flash[:sucess] = "Welcome to WEcycle! Login below."
+    flash[:success] = "Welcome to WEcycle! Login below."
     redirect_to login_path
   else
     flash[:danger] = @user.errors.full_messages.uniq.to_sentence

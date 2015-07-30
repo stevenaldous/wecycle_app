@@ -34019,3 +34019,1318 @@ Processing by MainController#index as HTML
   Rendered layouts/_nav.html.erb (0.1ms)
   Rendered shared/_flash.html.erb (0.1ms)
 Completed 200 OK in 73ms (Views: 62.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 12:03:46 -0700
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 272ms (Views: 253.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 12:03:46 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 12:03:46 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:03:46 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 12:03:46 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 12:03:46 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 12:03:47 -0700
+
+
+Started GET "/assets/script.self-8c433d454370a454248c1cc58116e8976d8742928e2cc6f4d351f9714f07ca2a.js?body=1" for ::1 at 2015-07-30 12:03:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:03:47 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:03:47 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 12:03:47 -0700
+
+
+Started GET "/calendars" for ::1 at 2015-07-30 12:03:52 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (4.1ms)
+  Rendered calendars/index.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 119ms (Views: 117.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:03:58 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"csGTvp2hIrT7f/lTVAJbByXmykqT0BieSXPO5bFz/i9GQBpyKJL8f0eQ8Xh0O8s4M6JqPO354JboqlRFQoAysQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 634ms (Views: 122.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:04:13 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5aXG/e6sxHqym2m/VvDPZPo4G4plEhjCS9Bf3XeomgPRJE8xW58asQ50YZR2yV9b7Hy7/Bs74MrqCcV9hFtWnQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 529ms (Views: 96.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:05:40 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5aXG/e6sxHqym2m/VvDPZPo4G4plEhjCS9Bf3XeomgPRJE8xW58asQ50YZR2yV9b7Hy7/Bs74MrqCcV9hFtWnQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 561ms (Views: 196.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/script.self-6c06128ba7e11c6f0c77c1c612f935e5bd446e32d46fd3cbe61fbd33afa5a1fd.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 12:05:40 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:06:34 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5aXG/e6sxHqym2m/VvDPZPo4G4plEhjCS9Bf3XeomgPRJE8xW58asQ50YZR2yV9b7Hy7/Bs74MrqCcV9hFtWnQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.1ms)
+  Rendered calendars/index.html.erb within layouts/application (34.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1086ms (Views: 518.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/script.self-5cd9eebb1bb559b12971301174d1eede6f2aa4eeab1d89b7d0c64f952c77abc5.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 12:06:35 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:06:40 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2gDgBueTBKgBJjbd490QHwuEnFXVBKa5whCVC8Xcv8bugWnKUqDaY73JPvbD5IAgHcA8I6stXrFjyQ+rNi9zWA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 412ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:07:13 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2gDgBueTBKgBJjbd490QHwuEnFXVBKa5whCVC8Xcv8bugWnKUqDaY73JPvbD5IAgHcA8I6stXrFjyQ+rNi9zWA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.7ms)
+  Rendered calendars/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 941ms (Views: 165.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/script.self-e50308ead4702348627666e3c57e8c4d5ae95c5d9c88ae1de8582b541e560700.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 12:07:14 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:07:31 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xiklauiwpvS/EQMMk03pQysw6+cfPsQmJit42pUQonfyqKymXYN4PwP+CyezdHl8PXRLkWEXPC6H8uJ6ZuNu6Q==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.1ms)
+  Rendered calendars/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 336ms (Views: 62.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:07:41 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xiklauiwpvS/EQMMk03pQysw6+cfPsQmJit42pUQonfyqKymXYN4PwP+CyezdHl8PXRLkWEXPC6H8uJ6ZuNu6Q==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.1ms)
+  Rendered calendars/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 409ms (Views: 152.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/script.self-9bda375957a98019dff2ce849d46d6a23e4f7d65e4cd76c26770a1c394234bc3.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 12:07:42 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 12:07:51 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5BbFKxBjvku+ESNzXJPx3+sKJpoSOs/oRZ/E5qsaxhrQl0znpVBggAL+K1h8qmHg/U6G7GwTN+DkRl5GWOkKhA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 363ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:00:50 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.2.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (173.2ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (336.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 13:01:00 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.2.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 13:01:48 -0700
+
+PG::ConnectionBad (FATAL:  the database system is starting up
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.2.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (131.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 13:02:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (132.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  [1m[35mUser Load (70.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered main/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered shared/_flash.html.erb (0.7ms)
+Completed 200 OK in 1921ms (Views: 1324.6ms | ActiveRecord: 397.3ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/script.self-9bda375957a98019dff2ce849d46d6a23e4f7d65e4cd76c26770a1c394234bc3.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/assets/all-electronics-recycling-home-bde1de1160ca6f33d5aec44e5c630a618ffa1b879ec81177b8d56fc5a19cf737.jpg" for ::1 at 2015-07-30 13:02:09 -0700
+
+
+Started GET "/posts" for ::1 at 2015-07-30 13:02:12 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (101.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_post.html.erb (302.0ms)
+  Rendered posts/index.html.erb within layouts/application (354.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 538ms (Views: 347.6ms | ActiveRecord: 104.3ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-30 13:02:15 -0700
+Processing by CalendarsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (99.5ms)
+  Rendered calendars/index.html.erb within layouts/application (121.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 220ms (Views: 218.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:02:23 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ScbHCOHFNZKg0sEofUBF0jNd3FhL1f1x2qqqVVBgKqx9R07EVPbrWRw9yQNdedXtJRl8LjX8BXl7czD1o5PmMg==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.7ms)
+  Rendered calendars/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 478ms (Views: 122.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:58:10 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ScbHCOHFNZKg0sEofUBF0jNd3FhL1f1x2qqqVVBgKqx9R07EVPbrWRw9yQNdedXtJRl8LjX8BXl7czD1o5PmMg==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.8ms)
+  Rendered calendars/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1593ms (Views: 645.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/script.self-e156151579df3123fa2b6ea844976b3419c6cc04d351f86b6612f0e2bf541027.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 13:58:12 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:58:54 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pa8EhBwVJpU7zf9dVPkkiX0RWTWcIXMnbhI0BMTREzqFzXepUOKUegAP9ZVanStM7DlEqhZfcQ8YdJw4OCI0g==", "address"=>"1746 NW 58TH ST", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1059ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:58:55 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pa8EhBwVJpU7zf9dVPkkiX0RWTWcIXMnbhI0BMTREzqFzXepUOKUegAP9ZVanStM7DlEqhZfcQ8YdJw4OCI0g==", "address"=>"1746 NW 58TH ST", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 759ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 13:59:33 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qPOFcdV7XGiacSU91d1biLRZbZE6lBDrS4Hjy6YrlBmccgy9YEiCoyaeLRb15Mu3oh3N50S96OPqWHlrVdhYhw==", "address"=>"3026 NE 88th St", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 440ms (Views: 80.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:08:22 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qPOFcdV7XGiacSU91d1biLRZbZE6lBDrS4Hjy6YrlBmccgy9YEiCoyaeLRb15Mu3oh3N50S96OPqWHlrVdhYhw==", "address"=>"3026 NE 88th St", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1063ms (Views: 144.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/script.self-a3b2cfee5100fc1b623c6bb4aa300e7858b11c0e368b7846a899382309c430bf.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:08:23 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:08:27 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wmaVoejNJymq25cYVdlg/XMSbuq5kGnhfCkrqtkIdN325xxtXf754hY0nzN14PDCZVbOnMe5kend8LEKKvu4Qw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.1ms)
+  Rendered calendars/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 375ms (Views: 73.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:08:36 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wmaVoejNJymq25cYVdlg/XMSbuq5kGnhfCkrqtkIdN325xxtXf754hY0nzN14PDCZVbOnMe5kend8LEKKvu4Qw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.1ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 438ms (Views: 158.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/script.self-bb928b51a3e4b44503f9a1c8457c415962efb00c080406ebd8516b4945d3d0a7.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:08:37 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:08:43 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wmaVoejNJymq25cYVdlg/XMSbuq5kGnhfCkrqtkIdN325xxtXf754hY0nzN14PDCZVbOnMe5kend8LEKKvu4Qw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 360ms (Views: 77.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/script.self-bb928b51a3e4b44503f9a1c8457c415962efb00c080406ebd8516b4945d3d0a7.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:08:43 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:09:20 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wmaVoejNJymq25cYVdlg/XMSbuq5kGnhfCkrqtkIdN325xxtXf754hY0nzN14PDCZVbOnMe5kend8LEKKvu4Qw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 528ms (Views: 150.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/script.self-96a18da16a59c37d8da12078a9b31fb4e5ddba7509a3907f9df4d894ae790399.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:09:21 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:09:26 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLJZCsrxe9/adR+Xh0+Mg/SE1h5JArXXmXztpkbUbvX8M9DGf8KlFGaaF7yndhy84sB2aDcrTd84pXcGtSeiaw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.7ms)
+  Rendered calendars/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 444ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:09:38 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLJZCsrxe9/adR+Xh0+Mg/SE1h5JArXXmXztpkbUbvX8M9DGf8KlFGaaF7yndhy84sB2aDcrTd84pXcGtSeiaw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 450ms (Views: 155.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:09:38 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:09:38 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:09:38 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/script.self-7fe1daa91386f618c8bb7518efe9d188b37289f16abfc2624b4f1d652884e8a6.js?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:09:39 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:09:42 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1/wiOz0nFMADjzgydf4VdAc/KSMv5ee/edXYAZvrC5/3nlEWcdCmLzhNMvp7mhqxlhc0vKWb5ZcPs3A9ZxgsA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.3ms)
+  Rendered calendars/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 407ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:09:53 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1/wiOz0nFMADjzgydf4VdAc/KSMv5ee/edXYAZvrC5/3nlEWcdCmLzhNMvp7mhqxlhc0vKWb5ZcPs3A9ZxgsA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 451ms (Views: 146.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/script.self-749e399c950c4b73e915b42469a2453f7086b03af2cf87f30f24e143ec185768.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:09:54 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:19:06 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w2nVTw+ZfrUk1xwAg2oHsWeFPAIRjgVU8JHTZS93p+/36FyDuqqgfpg4FCujU5eOccGcdG+n/VxRSEnF3IRrcQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.2ms)
+  Rendered calendars/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 703ms (Views: 202.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/script.self-886976535a761869f0a34edf8f34b5ceb73b74b53749dfe070010e7fa97f218b.js?body=1" for ::1 at 2015-07-30 14:19:07 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:19:25 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w2nVTw+ZfrUk1xwAg2oHsWeFPAIRjgVU8JHTZS93p+/36FyDuqqgfpg4FCujU5eOccGcdG+n/VxRSEnF3IRrcQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.2ms)
+  Rendered calendars/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1072ms (Views: 152.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/script.self-19acad6274e41ed2badd2604cd40e674ef6fc84406877d0263bf2259c17dcc95.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:19:26 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:19:31 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9LzYwz0QeuC6peyJUSxjjqdxLGcP36zbAs92UBLq28/APVEPiCOkKwZK5KJxFfOxsTWMEXH2VNOjFuzw4RkXUQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 359ms (Views: 86.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:20:07 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9LzYwz0QeuC6peyJUSxjjqdxLGcP36zbAs92UBLq28/APVEPiCOkKwZK5KJxFfOxsTWMEXH2VNOjFuzw4RkXUQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 380ms (Views: 84.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/script.self-749e399c950c4b73e915b42469a2453f7086b03af2cf87f30f24e143ec185768.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:20:07 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:21:08 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9LzYwz0QeuC6peyJUSxjjqdxLGcP36zbAs92UBLq28/APVEPiCOkKwZK5KJxFfOxsTWMEXH2VNOjFuzw4RkXUQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.7ms)
+  Rendered calendars/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 849ms (Views: 77.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/script.self-749e399c950c4b73e915b42469a2453f7086b03af2cf87f30f24e143ec185768.js?body=1" for ::1 at 2015-07-30 14:21:08 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:21:09 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:21:25 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9LzYwz0QeuC6peyJUSxjjqdxLGcP36zbAs92UBLq28/APVEPiCOkKwZK5KJxFfOxsTWMEXH2VNOjFuzw4RkXUQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.1ms)
+  Rendered calendars/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 420ms (Views: 68.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/script.self-749e399c950c4b73e915b42469a2453f7086b03af2cf87f30f24e143ec185768.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:21:25 -0700
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:21:31 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTk/TPGVLVtpX/hFRoTK1oHSdDnzOXk6S30eaIhqY7ptuLaARKbzkNWw8G5mvVrpl5bUT40QgTLqpITIe5mvJA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 357ms (Views: 84.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:21:53 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WTk/TPGVLVtpX/hFRoTK1oHSdDnzOXk6S30eaIhqY7ptuLaARKbzkNWw8G5mvVrpl5bUT40QgTLqpITIe5mvJA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 1352ms (Views: 76.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/assets/script.self-749e399c950c4b73e915b42469a2453f7086b03af2cf87f30f24e143ec185768.js?body=1" for ::1 at 2015-07-30 14:21:55 -0700
+
+
+Started GET "/posts" for ::1 at 2015-07-30 14:22:10 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_post.html.erb (13.3ms)
+  Rendered posts/index.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 85.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-30 14:22:11 -0700
+Processing by CalendarsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.2ms)
+  Rendered calendars/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:22:18 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4eoF9MBFhhhcVArSCjo1iRhdtmfDpf72bZOpER4kLcPBiHbZjLI092eWABoEXjpMiXWr+Enb/N4b9QEt4tcKQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.3ms)
+  Rendered calendars/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 349ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:23:43 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4eoF9MBFhhhcVArSCjo1iRhdtmfDpf72bZOpER4kLcPBiHbZjLI092eWABoEXjpMiXWr+Enb/N4b9QEt4tcKQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 511ms (Views: 144.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/script.self-55ebf03aba7ce46a11ebf22f2c157f761dd1401f6b6c97949e131b023cfc1cd9.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/page_style.self-695f4c120f793f822465be3e239b38bc1553cf6dc9786f71f967b0d8c14e40d3.css?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-30 14:23:43 -0700
+
+
+Started GET "/posts" for ::1 at 2015-07-30 14:23:48 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_post.html.erb (17.8ms)
+  Rendered posts/index.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-30 14:23:52 -0700
+Processing by CalendarsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:23:58 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qY3xZCWechiafmAv6pxOU+CZcXfD4zV44OTpWrQ/zKedDHiokK2s0yaRaATKpd5s9t3RAb3KzXBBPXP6R8wAOQ==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.5ms)
+  Rendered calendars/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 359ms (Views: 73.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:24:09 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jYgeVQxrxmMlRZPDnJX3JUE968awu6eYOXR6P3SVisG5CZeZuVgYqJmqm+i8rGcaV3lLsM6SX5CYreCfh2ZGXw==", "address"=>"500 yale ave n", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 443ms (ActiveRecord: 0.2ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/calendars_controller.rb:23:in `parse'
+  app/controllers/calendars_controller.rb:23:in `block in find'
+  app/controllers/calendars_controller.rb:21:in `each_index'
+  app/controllers/calendars_controller.rb:21:in `find'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (87.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (161.8ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-30 14:26:20 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jYgeVQxrxmMlRZPDnJX3JUE968awu6eYOXR6P3SVisG5CZeZuVgYqJmqm+i8rGcaV3lLsM6SX5CYreCfh2ZGXw==", "address"=>"1746 NW 58TH ST", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.3ms)
+  Rendered calendars/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 439ms (Views: 68.2ms | ActiveRecord: 0.4ms)

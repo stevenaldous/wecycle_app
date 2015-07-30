@@ -1,30 +1,8 @@
 $(document).ready(function() {
 
-var calendarData = gon.calendarResponse
 //
-// alert(calendarData);
-
-
-
-
-
   $('#calendar').fullCalendar({
-    events:
-    [
-      { title: "yahtzee!",
-        start: '2015-07-30',
-        end: '2015-07-30',
-        allDay:true
-      }
-
-
-
-    ]
-
-
-
-
-
+    events: gon.calendar_info
      }); // end of calendar
   //   }
   // })  //end ofAjax
