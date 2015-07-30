@@ -44,6 +44,8 @@ gem 'gon'
 
 gem 'foreman'
 
+gem 'rails_12factor', group: :production
+
 gem 'fullcalendar-rails'
 
 # Use Unicorn as the app server
