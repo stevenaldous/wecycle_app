@@ -17,7 +17,7 @@ class CalendarsController < ApplicationController
     else
       converted_array = convert.slice(1..-2).split(",")
       location = converted_array[0][1..-2]
-      response = JSON.parse(open("http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=#{location}&pJustChecking=&pApp=CC&pIE=&start=1435474800&end=1609372800&").read)
+      response = JSON.parse(open("http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=#{location}&pJustChecking=&pApp=CC&pIE=&start=0").read)
       recycling_info= []
       response.each_index do |f|
         if response[f]['status'] == nil
