@@ -43021,3 +43021,44 @@ Processing by CalendarsController#find as HTML
   Rendered layouts/_nav.html.erb (0.1ms)
   Rendered shared/_flash.html.erb (0.2ms)
 Completed 200 OK in 508ms (Views: 80.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 13:29:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered main/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.6ms)
+Completed 200 OK in 237ms (Views: 204.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 13:30:10 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (17.2ms)
+  Rendered calendars/index.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 13:30:10 -0700
+Processing by CalendarsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.8ms)
+  Rendered calendars/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 13:30:15 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v/xi9UpA8z2vu7RMuD9AISmUUrly2OX99vLrp2VoywCcFtXlYU3wGoiAahVZSFDZxrEx4Be6xZkyoyVpSH4eDA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.7ms)
+  Rendered calendars/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 856ms (Views: 75.9ms | ActiveRecord: 0.4ms)
