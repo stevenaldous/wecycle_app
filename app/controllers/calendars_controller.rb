@@ -10,13 +10,14 @@ class CalendarsController < ApplicationController
   def find
     address = params['address']
     convert = RestClient.get("http://www.seattle.gov/UTIL/WARP/Home/GetAddress?pAddress="+address)
-    if convert == []
+    if convert.length < 4
       flash[:danger] = "Could not locate that address."
+      redirect_to calendars_path
       return
     else
       converted_array = convert.slice(1..-2).split(",")
       location = converted_array[0][1..-2]
-      response = JSON.parse(open("http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=#{location}&pJustChecking=&pApp=CC&pIE=&start=0").read)
+      response = JSON.parse(open("http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=&pAddress=#{location}&pJustChecking=&pApp=CC&pIE=&start=1435474800&end=1609372800&").read)
       recycling_info= []
       response.each_index do |f|
         if response[f]['status'] == nil
@@ -33,6 +34,6 @@ class CalendarsController < ApplicationController
       end
       gon.calendar_info=recycling_info
     end
-    render 'index'
+    render "index"
   end
 end

@@ -8,15 +8,15 @@
     <ul id="links" class="nav navbar-nav navbar-right">
       <li><a id="links" href="/posts">waste_not</a></li>
       <li><a id="links" href="/calendars">when_to</a></li>
-      <li><a id="links" href="#">how_to</a></li>
+<!--       <li><a id="links" href="#">how_to</a></li> -->
       <% if @current_user %>
         <li class="dropdown">
         <a href="#" id="links" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= @current_user.display_name %><span class="caret"></span></a>
         <ul  class="dropdown-menu">
           <li><a id="droplinks" href="/logout">Logout</a></li>
-          <li><a id="droplinks" href="#">Settings</a></li>
-          <li><a id="droplinks" href="#">Help</a></li>
-        </ul>
+<!--           <li><a id="droplinks" href="#">Settings</a></li> -->
+       <!--    <li><a id="droplinks" href="#">Help</a></li>
+ -->        </ul>
       </li>
       <% else %>
         <li><a id="links" href="/login">login</a></li>

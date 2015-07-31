@@ -7,10 +7,11 @@
     <%= bootstrap_form_for :user do |u| %>
       <%= u.text_field :email %>
       <%= u.password_field :password %>
-    <%= u.primary "Log In" %>
+    <%= u.primary "Log In", :id => "button" %>
    <% end %>
+   &nbsp
      <div class="panel-footer">
-     <h5>New to WEcycle? <%= link_to "Sign Up Here.", new_user_path %></h5>
+     <h5>New to WEcycle? <%= link_to "Sign Up Here.", new_user_path, :id => "inner-link" %></h5>
      </div>
   </div>
   </div>

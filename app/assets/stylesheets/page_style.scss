@@ -3,7 +3,6 @@ body{
   background-size: 100%;
   background-repeat: none;
   background-position: fixed;
-
 }
 .navbar{
   background-color: #5C9437;
@@ -20,7 +19,26 @@ body{
     text-align: right;
     color: #5C9437;
   }
-
+}
+#welcome{
+  position: absolute;
+  margin-top: 10%;
+  float: none;
+  background-color: rgba(53, 90, 28, 0.7);
+  color: #F6F6F6;
+}
+#button{
+  background-color: #569030;
+  border: none;
+}
+.button{
+  color: #569030;
+}
+#inner-link{
+  color: #569030;
+}
+.img-responsive{
+  margin: 0 auto;
 }
 .well{
   background-color: #FFFFFF;

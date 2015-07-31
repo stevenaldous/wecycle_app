@@ -2,7 +2,7 @@
   <div class="well">
     <%= bootstrap_form_for @post do |p| %>
       <%= p.text_field :desc, placeholder: "Edit descripton here"  %>
-      <%= p.primary "Edit" %>
+      <%= p.primary "Edit", :id => "button" %>
 <% end %>
   </div>
 </div>

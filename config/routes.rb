@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   post 'calendars' => 'calendars#find'
 
 
-resources :comments
   resources :posts do
    resources :comments, :only => [:create, :index, :new]
   end
