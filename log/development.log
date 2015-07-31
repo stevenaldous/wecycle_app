@@ -42859,3 +42859,165 @@ Processing by CalendarsController#find as HTML
   Rendered layouts/_nav.html.erb (0.1ms)
   Rendered shared/_flash.html.erb (0.1ms)
 Completed 200 OK in 1339ms (Views: 119.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:39:38 -0700
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered main/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 160ms (Views: 153.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-31 09:45:49 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mPost Load (35.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (25.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_post.html.erb (437.3ms)
+  Rendered posts/index.html.erb within layouts/application (456.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 627ms (Views: 390.4ms | ActiveRecord: 168.4ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 09:45:52 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered calendars/_form.html.erb (3.8ms)
+  Rendered calendars/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2015-07-31 09:45:56 -0700
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signup" for ::1 at 2015-07-31 09:45:58 -0700
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered users/new.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 131ms (Views: 129.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2015-07-31 09:46:03 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2015-07-31 09:46:11 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UGU4aBvDiLYeaD8V08ISQIXcEPuyibmIah5r+gmFkldzj494MM6LkTlT4UwytQK4avlzotfrmeyuT6U0JJNHWw==", "user"=>{"email"=>"stevenaldous@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (42.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "stevenaldous@gmail.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 114ms (ActiveRecord: 43.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:46:11 -0700
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-31 09:46:15 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_post.html.erb (6.9ms)
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 09:46:30 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.1ms)
+  Rendered calendars/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 09:46:41 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y6b4Y5E33SQKH2LYYpq93zOV/TSiKORYvP0sS0edWLNATE9zujreAy0kvIGD7a0n3LCebcdKxDx4rOKFaouNvw==", "address"=>"isrseglasefkln", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/calendars
+Completed 302 Found in 1563ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 09:46:43 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.1ms)
+  Rendered calendars/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 09:46:51 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6W55k1lsYn68HpGh1NQAX3+5FuAhQuLA1qB1sRDUCT7KhM6DcmFhWZslT/g1oxCnkJx1uUQgwqQS8bt/PcLcMg==", "address"=>"500 yale ave", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.6ms)
+  Rendered calendars/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 590ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 09:46:58 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hp7khTfcJ39N9nYQByAGCmBpzqr95MEjJz5F5Wq+i3yldFOVHNEkWGrNqEnmVxbyj0yt85iG4Ufjb4srR6hecA==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered calendars/_form.html.erb (3.1ms)
+  Rendered calendars/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 431ms (Views: 76.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 09:47:06 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zeLotNyUliwG81PJXVyxmaYtWNJrfgMFAGzCKBGv9i3uCF+k95mVCyHIjZC8K6FhSQg7iw4cI2HEPQzmPLkjIQ==", "address"=>"1746 NW 58TH ST", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered calendars/_form.html.erb (2.8ms)
+  Rendered calendars/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.2ms)
+Completed 200 OK in 508ms (Views: 80.9ms | ActiveRecord: 0.4ms)

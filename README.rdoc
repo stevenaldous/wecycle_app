@@ -1,28 +1,53 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+WDI -PROJECT 2
 
-Things you may want to cover:
+For this project I’m building a recycling community website.
 
-* Ruby version
+I will be including a calendar to find your recycling dates, a community board to share recycling ideas, and some general info on recycling an links to more information.
 
-* System dependencies
+For this project I’ll be using Ruby-on-Rails, SASS, Bootstrap, and Parallax.
 
-* Configuration
+7.28 update
+post and user login 90% complete, Calendar 40% complete, how_to section not started yet.
 
-* Database creation
+here is the link to my github repository.
 
-* Database initialization
+https://github.com/stevenaldous/wecycle_app
 
-* How to run the test suite
+7.30
+calendar is working! added more scss to get it ready. having an issue loading to heroku but will trouble shoot it and get it working.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Steven Aldous
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Site plan text, photos in word.doc
+
+WEcycle is a community based recycling website with community sharing and general resources for when, where, how to recycle. Kicking off in Seattle and coming to a city near you.
+ =
+
+• Welcome button – modal with info about site
+• wasteNot – community image board of repurposed items.
+• how_to – recycling rules/ettiquete - still in production
+• when_to – calendar API to tell you when your garbage is picked up
+• Dropdown
+o Login
+o Sign up
+o Settings
+o About us
+
+Modals for login/signup
+
+
+
+
+sloppy calendar drawing. Put your address in and recycle/trash icons appear on your dates. Going to attempt to create an option to attach the dates to your account and alert you the day before it’s picked up.
+
+
+
+
+User Stories:
+Frank is a 38 year old Husband and Father of 2. Frank is passionate about making sure that the environment is well taken care of and our society takes care of what we have been given so its there in the future. He wants a source of information that is easy to use and helps him remember when to drag the recycling bin to the curb. He also wants to have a source of information that is interesting and easy to navigate so that his children have a resource to learn more and be comfortable and knowledgable about recycling.
+
+Paula is 26 years old and is a resourceful person who likes to repurpose old items and avoids sending useful materials to the landfill. She wants to have access to a community of like minded people and generate some more ideas for what to do with things as well as share what she has created.
+
