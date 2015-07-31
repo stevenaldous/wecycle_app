@@ -42567,3 +42567,214 @@ Processing by MainController#index as HTML
   Rendered layouts/_nav.html.erb (0.5ms)
   Rendered shared/_flash.html.erb (0.4ms)
 Completed 200 OK in 827ms (Views: 737.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 08:27:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered main/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered shared/_flash.html.erb (0.6ms)
+Completed 200 OK in 397ms (Views: 377.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/page_style.self-49956483843a3c39014e4d982f07ef9ce3d138ab75aa13fb3b625fb3a7f5918f.css?body=1" for ::1 at 2015-07-31 08:27:21 -0700
+
+
+Started GET "/" for ::1 at 2015-07-31 08:28:20 -0700
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/page_style.self-49956483843a3c39014e4d982f07ef9ce3d138ab75aa13fb3b625fb3a7f5918f.css?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/script.self-3808db4eb886f2d16b6a2df4579f3a40fc1a709d77d6136e9db6fd208868f2e2.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-31 08:28:20 -0700
+
+
+Started GET "/" for ::1 at 2015-07-31 08:28:40 -0700
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/page_style.self-41454c55bc7d7884d592e470e8368bdc7aa15658f8e6bd9e57357a04c538e58a.css?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/script.self-3808db4eb886f2d16b6a2df4579f3a40fc1a709d77d6136e9db6fd208868f2e2.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/assets/all-electronics-recycling-home-bde1de1160ca6f33d5aec44e5c630a618ffa1b879ec81177b8d56fc5a19cf737.jpg" for ::1 at 2015-07-31 08:28:40 -0700
+
+
+Started GET "/" for ::1 at 2015-07-31 08:31:19 -0700
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 145ms (Views: 142.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/page_style.self-8563f44d7a344892d5dc340d8e567bb0088ebde066ef2449151ec4d8439f6dd4.css?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/script.self-3808db4eb886f2d16b6a2df4579f3a40fc1a709d77d6136e9db6fd208868f2e2.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/assets/all-electronics-recycling-home-bde1de1160ca6f33d5aec44e5c630a618ffa1b879ec81177b8d56fc5a19cf737.jpg" for ::1 at 2015-07-31 08:31:19 -0700
+
+
+Started GET "/posts" for ::1 at 2015-07-31 08:31:56 -0700
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_post.html.erb (109.9ms)
+  Rendered posts/index.html.erb within layouts/application (112.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 244ms (Views: 189.9ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 08:32:02 -0700
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-31 08:32:33 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_post.html.erb (6.4ms)
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 75.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/calendars" for ::1 at 2015-07-31 08:43:26 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered calendars/_form.html.erb (127.9ms)
+  Rendered calendars/index.html.erb within layouts/application (139.2ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.3ms)
+Completed 200 OK in 366ms (Views: 362.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 08:43:35 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TnLliBJxkP0FwlqxIY7cfgW1vkBaZs1KiuRMVBJwadB682xEp0JONrktUpoBt0xBE/EeNiRPNUIrPdb04YOlTg==", "address"=>"5906 31st ave sw", "commit"=>"Look Up"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 800ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/calendars" for ::1 at 2015-07-31 08:43:50 -0700
+Processing by CalendarsController#find as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G/DJmDTvjEuKC3VBFhKxYzQakhmXOLwD7HeHsT5BRlEvcUBUgdxSgDbkfWo2KyFcIl4yb+kRRAtNrh0RzbKKzw==", "address"=>"3629 Francis Ave N", "commit"=>"Look Up"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered calendars/_form.html.erb (2.4ms)
+  Rendered calendars/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 459ms (Views: 67.6ms | ActiveRecord: 0.4ms)

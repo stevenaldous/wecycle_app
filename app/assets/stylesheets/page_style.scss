@@ -3,12 +3,12 @@ body{
   background-size: 100%;
   background-repeat: none;
   background-position: fixed;
+  font-family: 'Ubuntu', sans-serif;
 }
 .navbar{
   background-color: #5C9437;
   border: none;
   border-radius: 0px;
-
   .navbar-brand{
    color: #FFFFFE;
   }
@@ -16,6 +16,9 @@ body{
    color: #FFFFFE;
    a:hover {
     background-color: #568922;
+   }
+   .title{
+    font-size: 30px;
    }
   }
 
