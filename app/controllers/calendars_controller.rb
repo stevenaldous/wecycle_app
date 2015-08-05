@@ -9,6 +9,8 @@ class CalendarsController < ApplicationController
   end
   def find
     address = params['address']
+    URI::escape(address)
+    puts(address)
     convert = RestClient.get("https://www.seattle.gov/UTIL/WARP/Home/GetAddress?pAddress="+address)
     if convert.length < 4
       flash[:danger] = "Could not locate that address."
