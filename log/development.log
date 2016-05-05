@@ -43654,3 +43654,144 @@ Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450
 
 
 Started GET "/assets/all-electronics-recycling-home-bde1de1160ca6f33d5aec44e5c630a618ffa1b879ec81177b8d56fc5a19cf737.jpg" for ::1 at 2015-08-05 15:45:15 -0700
+
+
+Started GET "/" for ::1 at 2016-05-05 12:37:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered main/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered shared/_flash.html.erb (0.5ms)
+Completed 200 OK in 258ms (Views: 234.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/fullcalendar.self-bfd1e733800d14d6124c551399fa09d9fb4108c7623ad7bd2cf351ef92704af5.css?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/page_style.self-145727c7e953a881b396843efbe110d3935aae54c970f213fed325a9022cb5a6.css?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/moment.self-7c169710367e715cec0e7768bb92b9339f5a767a109041e9e9861a0abc0afa44.js?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/fullcalendar.self-8668c2e6be32331fb05b9c8cb047adeb64ae3d0575ba9d2f029b9a4cb37ec3f5.js?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2016-05-05 12:37:09 -0700
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-05 12:37:10 -0700
+
+
+Started GET "/assets/script.self-3808db4eb886f2d16b6a2df4579f3a40fc1a709d77d6136e9db6fd208868f2e2.js?body=1" for ::1 at 2016-05-05 12:37:10 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-05-05 12:37:10 -0700
+
+
+Started GET "/assets/all-electronics-recycling-home-bde1de1160ca6f33d5aec44e5c630a618ffa1b879ec81177b8d56fc5a19cf737.jpg" for ::1 at 2016-05-05 12:37:10 -0700
+
+
+Started GET "/posts" for ::1 at 2016-05-05 12:37:11 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/_post.html.erb (26.8ms)
+  Rendered posts/index.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 5.7ms)
+
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <% @posts.each do |p| %>
+    2:   <div class="well">
+    3:     <%= cl_image_tag(p.image, :class => "img-responsive") %>
+    4:     <h3><%= p.desc %></h3>
+    5:     <span>
+    6:      <%= p.user.display_name %>
+  app/views/posts/_post.html.erb:3:in `block in _app_views_posts__post_html_erb__2873367158157568960_70100420613900'
+  app/views/posts/_post.html.erb:1:in `_app_views_posts__post_html_erb__2873367158157568960_70100420613900'
+  app/views/posts/index.html.erb:5:in `_app_views_posts_index_html_erb__4468817195180499909_70100420577400'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.0ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (157.8ms)
+
+
+Started GET "/calendars" for ::1 at 2016-05-05 12:37:17 -0700
+Processing by CalendarsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered calendars/_form.html.erb (22.3ms)
+  Rendered calendars/index.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 114ms (Views: 111.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2016-05-05 12:37:18 -0700
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_nav.html.erb (0.1ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars" for ::1 at 2016-05-05 12:37:22 -0700
+Processing by CalendarsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered calendars/_form.html.erb (9.4ms)
+  Rendered calendars/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_nav.html.erb (0.0ms)
+  Rendered shared/_flash.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2016-05-05 12:37:27 -0700
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/_post.html.erb (3.6ms)
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (Must supply cloud_name in tag or in configuration):
+    1: <% @posts.each do |p| %>
+    2:   <div class="well">
+    3:     <%= cl_image_tag(p.image, :class => "img-responsive") %>
+    4:     <h3><%= p.desc %></h3>
+    5:     <span>
+    6:      <%= p.user.display_name %>
+  app/views/posts/_post.html.erb:3:in `block in _app_views_posts__post_html_erb__2873367158157568960_70100420613900'
+  app/views/posts/_post.html.erb:1:in `_app_views_posts__post_html_erb__2873367158157568960_70100420613900'
+  app/views/posts/index.html.erb:5:in `_app_views_posts_index_html_erb__4468817195180499909_70100420577400'
+
+
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.8ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.3ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/stevenaldous/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.6ms)
